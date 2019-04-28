@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&amp;subset=cyrillic" rel="stylesheet"> -->
+    <title>Rizor</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__logo">
+        <p class="hidden">Rizor</p>
+        <img src="img/mainlogo.png" alt="Rizor">
+      </div>
+      <div class="header__menu">
+        <svg width="30px" height="22px">
+          <path fill-rule="evenodd"  fill="rgb(115, 115, 115)"
+           d="M1.598,-0.008 C8.946,-0.008 16.297,-0.008 23.645,-0.008 C25.222,-0.008 26.798,-0.008 28.374,-0.008 C28.943,0.158 29.328,0.429 29.621,0.866 C29.793,1.123 30.105,1.667 29.940,2.208 C29.729,2.900 29.282,3.449 28.598,3.675 C28.109,3.836 27.309,3.737 26.713,3.737 C25.414,3.737 24.114,3.737 22.815,3.737 C17.756,3.737 12.696,3.737 7.637,3.737 C6.199,3.737 4.761,3.737 3.323,3.737 C2.621,3.737 1.728,3.824 1.214,3.612 C0.183,3.188 -0.393,1.796 0.415,0.710 C0.587,0.480 0.934,0.235 1.214,0.117 C1.343,0.063 1.501,0.073 1.598,-0.008 ZM1.662,8.606 C8.989,8.606 16.318,8.606 23.645,8.606 C24.753,8.606 25.861,8.606 26.968,8.606 C27.492,8.606 28.176,8.527 28.598,8.668 C29.050,8.820 29.377,9.117 29.621,9.480 C29.793,9.736 30.105,10.280 29.940,10.822 C29.729,11.513 29.282,12.063 28.598,12.289 C28.109,12.450 27.309,12.351 26.713,12.351 C25.414,12.351 24.114,12.351 22.815,12.351 C17.852,12.351 12.887,12.351 7.924,12.351 C6.444,12.351 4.963,12.351 3.483,12.351 C2.827,12.351 1.917,12.469 1.374,12.289 C0.251,11.914 -0.446,10.481 0.415,9.324 C0.587,9.093 0.934,8.848 1.214,8.731 C1.352,8.673 1.544,8.684 1.662,8.606 ZM1.662,17.219 C8.989,17.219 16.318,17.219 23.645,17.219 C24.753,17.219 25.861,17.219 26.968,17.219 C27.492,17.219 28.176,17.141 28.598,17.282 C29.050,17.433 29.377,17.731 29.621,18.094 C29.793,18.350 30.105,18.894 29.940,19.436 C29.728,20.130 29.282,20.672 28.598,20.902 C28.126,21.061 27.327,20.965 26.745,20.965 C25.435,20.965 24.124,20.965 22.815,20.965 C15.743,20.965 8.669,20.965 1.598,20.965 C0.531,20.654 -0.537,19.426 0.288,18.125 C0.488,17.808 0.849,17.497 1.214,17.344 C1.352,17.287 1.544,17.298 1.662,17.219 Z"/>
+        </svg>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__screen">
+        <h1 class="main__title frmo">Rizor Hovertrax 4.0</h1>
+         <p class="main__subtitle frr">Маневренность, легкость, экологичность</p>
+      </div>
+
+      <section class="advantage">
+        <h2 class="advantage__title section-title frr">Преимущества</h2>
+        <div class="advantage__design  container">
+          <h3 class="advantage__subtitle frmo">Дизайн</h3>
+          <p class="advantage__text design__text fmp">Внешний вид скутера дышит идеями футуризма:</p>
+          <ul class="advantage__list">
+            <li class="advantage__item advantage__item--design fmp">
+              плавные линии
+            </li>
+            <li class="advantage__item advantage__item--design fmp">
+              подсветка светодиодными индикаторами
+            </li>
+            <li class="advantage__item advantage__item--design fmp">
+              рельефные бамперы, оснащенные защитными панелями
+            </li>
+          </ul>
+        </div>
+        <div class="advantage__color  container">
+          <h3 class="advantage__subtitle frmo">Цвет</h3>
+          <p class="advantage__text color__text frr">Модель представлена сразу в нескольких цветах</p>
+            <input class="hidden" type="radio" id="btn-1" name="color-toggle">
+            <input class="hidden" type="radio" id="btn-2" name="color-toggle">
+            <input class="hidden" type="radio" id="btn-3" name="color-toggle">
+            <input class="hidden" type="radio" id="btn-4" name="color-toggle">
+            <input class="hidden" type="radio" id="btn-5" name="color-toggle" checked="checked">
+
+            <div class="slider__switcher color__list">
+              <label for="btn-1" class="color__toggle color__item color__item--yellow"></label>
+              <label for="btn-2" class="color__toggle color__item color__item--blue"></label>
+              <label for="btn-3" class="color__toggle color__item color__item--red"></label>
+              <label for="btn-4" class="color__toggle color__item color__item--white"></label>
+              <label for="btn-5" class="color__toggle color__item color__item--black"></label>
+            </div>
+
+          <ul class="advantage__list colorscheme__list slider">
+            <li class="colorscheme__item slide slide--1">
+              <span class="hidden">Rizor Hovertrax 4.0 в желтой цветовой схеме</span>
+            </li>
+            <li class="colorscheme__item slide slide--2">
+              <span class="hidden">Rizor Hovertrax 4.0 в синей цветовой схеме</span>
+            </li>
+            <li class="colorscheme__item slide slide--3">
+              <span class="hidden">Rizor Hovertrax 4.0 в красной цветовой схеме</span>
+            </li>
+            <li class="colorscheme__item slide slide--4">
+              <span class="hidden">Rizor Hovertrax 4.0 в белой цветовой схеме</span>
+            </li>
+            <li class="colorscheme__item slide slide--5">
+              <span class="hidden">Rizor Hovertrax 4.0 в черной цветовой схеме</span>
+            </li>
+          </ul>
+        </div>
+        <div class="advantage__indicators">
+          <h3 class="advantage__subtitle frmo">Индикаторы</h3>
+          <p class="advantage__text indicators__text frr">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
+          <p class="advantage__text indicators__text frr">Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.</p>
+        </div>
+        <div class="advantage__modes container">
+          <h3 class="advantage__subtitle frmo">Режимы</h3>
+          <p class="advantage__text modes__text frr">Помимо «умной» подсветки, <b class="modes__text--bold">Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
+          <ul class="advantage__list modes__list">
+            <li class="advantage__item modes__item fmp">Один для продвинутых пользователей</li>
+            <li class="advantage__item modes__item fmp">Второй для новичков</li>
+          </ul>
+          <table class="advantage__description">
+            <tr class="advantage__valuerow">
+              <td class="advantage__value modes__value--1 frmo">13&nbsp;<span class="advantage__value--unit modes__value--unit">км/ч</span></td>
+              <td class="advantage__value frmo">2</td>
+            </tr>
+            <tr class="advantage__namepad">
+              <th class="advantage__name modes__name--1 frr">Максимальная скорость</th>
+              <th class="advantage__name frr">Скоростных режима</th>
+            </tr>
+          </table>
+        </div>
+        <div class="advantage__battery container">
+          <h3 class="advantage__subtitle frmo">Аккумулятор</h3>
+          <p class="advantage__text battery__text frr">Имеет съемную аккуму&shy;ляторную батарею. Это позволяет легко выта&shy;щить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это, кстати, единст&shy;венный гироскутер, с которым проходит такой «трюк», да и есть документы, под&shy;твер&shy;ждающие лицен&shy;зию на его производство и использование.</p>
+          <table class="advantage__description">
+            <tr class="advantage__valuerow">
+              <td class="advantage__value battery__value--1 frmo">25&nbsp;<span class="advantage__value--unit">км</span></td>
+              <td class="advantage__value frmo">2&nbsp;<span class="advantage__value--unit">часа</span></td>
+            </tr>
+            <tr class="advantage__namepad">
+              <th class="advantage__name battery__name--1 frr">Запас хода</th>
+              <th class="advantage__name frr">Время зарядки</th>
+            </tr>
+          </table>
+        </div>
+        <div class="advantage__electronics">
+          <h3 class="advantage__subtitle frmo">Электроника</h3>
+          <p class="advantage__text electronics__text frr">При эксплуатации <b class="electronics__text--bold">Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
+          <p class="advantage__text electronics__text frr">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
+
+          <table class="advantage__description electronics__description">
+            <tr class="advantage__valuerow electronics__valuerow">
+              <td class="advantage__value electronics__value electronics__value--1 frmo">
+                <div class="electronics__stub--1"></div>
+              </td>
+              <td class="advantage__value electronics__value electronics__value--2 frmo">
+                <div class="electronics__stub--2"></div>
+              </td>
+            </tr>
+            <tr class="advantage__namepad electronics__namepad">
+              <th class="advantage__name electronics__name frr">Бесшумный двигатель</th>
+              <th class="advantage__name electronics__name frr">Встроенный гироскоп</th>
+            </tr>
+          </table>
+          <video class="electronics__novideo" src="img/novideo.svg" poster="img/a-electronics-s.jpg"></video>
+        </div>
+      </section>
+
+      <section class="specifications">
+        <h2 class="specifications__title section-title frr">Характеристики</h2>
+        <h3 class="specifications__logotitle frmo">Rizor Hovertrax 4.0</h3>
+        <div class="specifications__shell specifications__sublogo container">
+          <h3 class="specifications__subtitle frr">Корпус</h3>
+          <p class="specifications__text frr">выполнен из прочного пластика, имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты антискользящим покрытием.</p>
+        </div>
+        <div class="specifications__wheels specifications__sublogo container">
+          <h3 class="specifications__subtitle frr">Колеса</h3>
+          <p class="specifications__text frr"><b class="specifications__bold frr">Rizor Hovertrax 4.0</b> получил относительно небольшие, но, в целом, среднего диаметра колёса в <b class="specifications__bold frr">6,5 дюймов</b>.</p>
+        </div>
+        <div class="specifications__power specifications__sublogo container">
+          <h3 class="specifications__subtitle frr">Мощность</h3>
+          <p class="specifications__text frr">двигателя в <b class="specifications__bold frr">350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b class="specifications__bold frr">13 км/ч</b>.</p>
+        </div>
+        <div class="specifications__weight specifications__sublogo container">
+          <h3 class="specifications__subtitle frr">Вес</h3>
+          <p class="specifications__text frr">небольшой вес, приблизительно в <b class="specifications__bold frr">12 кг</b>, позволяет относительно компактно переносить гироборд с собой.</p>
+        </div>
+      </section>
+
+      <section class="target-group">
+        <div class="target-group__sublogo">
+          <!-- <h3 class="target-group__logotitle">4.0 Rizor</h3> -->
+        </div>
+        <div class="target-group__description">
+          <h2 class="target-group__title section-title frr">Для кого</h2>
+          <p class="target-group__text container frr">
+            При максимально выдерживаемой нагрузке в <b class="target-group__bold">100 кг</b> отлично подойдёт как для подрастающего поколения, так и для более взрослых «наездников».
+          </p>
+          <p class="target-group__text container frr">
+            Это единственный гироскутер со специальным детским режимом езды.
+          </p>
+          <button type="button" name="button" class="btn btn--to-catalog frr">Перейти в каталог</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright frr">© All rights reserved, 2017</p>
+    </footer>
+
+  </body>
+</html>

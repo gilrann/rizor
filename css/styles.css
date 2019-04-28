@@ -1,0 +1,650 @@
+@font-face {
+    font-family: 'Rubik Mono One';
+    src:
+        url(../fonts/RubikMonoOne-Regular.woff),
+        url(../fonts/RubikMonoOne-Regular.eot);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src:
+        url(../fonts/MyriadPro-Regular.woff),
+        url(../fonts/MyriadPro-Regular.eot);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url(../fonts/Roboto-Regular.woff),
+        url(../fonts/Roboto-Regular.eot);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url(../fonts/Roboto-Light.woff),
+        url(../fonts/Roboto-Light.eot);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url(../fonts/Roboto-Bold.woff),
+        url(../fonts/Roboto-Bold.eot);
+    font-weight: 700;
+}
+
+.hidden,
+input[type="checkbox"].hidden,
+input[type="radio"].hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+body {
+  background-color: #ffffff;
+}
+
+.frmo {
+  font-family: 'Rubik Mono One', 'Lucida Console', sans-serif;
+}
+
+.frr {
+  font-family: 'Roboto', "Trebuchet MS", "Helvetica CY", sans-serif;
+}
+
+.fmp {
+  font-family: 'Myriad Pro', "Verdana", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 11px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main__screen {
+  background: url('../img/title-back-s.jpg') 0 0 no-repeat #b644fb;
+  background-size: cover;
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
+
+.main__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 11px;
+
+  font-size: 9vw;
+  color: #ffffff;
+}
+
+.main__subtitle {
+  margin: 0;
+  padding: 0 11px;
+  width: 75vw;
+
+  font-weight: 700;
+  font-size:3.75vw;
+  line-height: 6.25vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-title {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 4.4vw;
+  line-height: 25vw;
+  text-transform: uppercase;
+  color: #3a30f8;
+  text-align: center;
+}
+
+/* Первая секция */
+.advantage__title {
+
+}
+
+.advantage__design {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px 80px;
+}
+
+.advantage__subtitle {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  text-align: center;
+  font-size: 7.5vw;
+}
+
+.advantage__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 5vw;
+}
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantage__item {
+  position: relative;
+  padding-left: 38px;
+  padding-bottom: 25px;
+
+  font-size: 5vw;
+}
+
+.advantage__item:last-child {
+  padding-bottom: 0;
+}
+
+.advantage__item::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  top: 2.5vw;
+  left: 0;
+  background-color: #000000;
+}
+
+.design__text {
+  margin-bottom: 35px;
+}
+
+.advantage__color {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 80px 0;
+}
+
+.color__switcher {
+  align-self: center;
+}
+
+.color__list {
+  display: flex;
+  width: 75vw;
+  justify-content: space-between;
+
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.color__item {
+  position: relative;
+
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  border: solid 3px #ffffff;
+
+  cursor: pointer;
+}
+
+.color__item--yellow {background-color: yellow;}
+.color__item--blue {background-color: blue; }
+.color__item--red {background-color: red; }
+.color__item--white {background-color: #f0efef; }
+.color__item--black {background-color: black; }
+
+/* начало слайдера */
+.slider-switcher label::after {
+  content: "";
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border: 3px solid #ac38e1;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  display: none;
+}
+
+#btn-1:checked ~ .slider-switcher label[for="btn-1"]::after {
+  display: block;
+}
+#btn-2:checked ~ .slider-switcher label[for="btn-2"]::after {
+  display: block;
+}
+#btn-3:checked ~ .slider-switcher label[for="btn-3"]::after {
+  display: block;
+}
+#btn-4:checked ~ .slider-switcher label[for="btn-4"]::after {
+  display: block;
+}
+#btn-5:checked ~ .slider-switcher label[for="btn-5"]::after {
+  display: block;
+}
+
+#btn-1:focus ~ .slider-switcher label[for="btn-1"],
+#btn-2:focus ~ .slider-switcher label[for="btn-2"],
+#btn-3:focus ~ .slider-switcher label[for="btn-3"],
+#btn-4:focus ~ .slider-switcher label[for="btn-4"],
+#btn-5:focus ~ .slider-switcher label[for="btn-5"] {
+  border: solid 3px #9045fe;
+}
+
+.color__item:hover {
+  border: solid 3px #9045fe;
+}
+
+.color__text {
+  margin: 0 30px 35px 30px;
+}
+
+.colorscheme__list {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 80vw;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 80vw;
+}
+
+.slide--1 {
+  background: url('../img/rizor-yellow-s.png') 0 0 no-repeat;
+  background-size: cover;
+}
+.slide--2 {
+  background: url('../img/rizor-blue-s.png') 0 0 no-repeat;
+  background-size: cover;
+}
+.slide--3 {
+  background: url('../img/rizor-red-s.png') 0 0 no-repeat;
+  background-size: cover;
+}
+.slide--4 {
+  background: url('../img/rizor-white-s.png') 0 0 no-repeat;
+  background-size: cover;
+}
+.slide--5 {
+  background: url('../img/rizor-black-s.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+#btn-1:checked ~ .slider > .slide--1,
+#btn-2:checked ~ .slider > .slide--2,
+#btn-3:checked ~ .slider > .slide--3,
+#btn-4:checked ~ .slider > .slide--4,
+#btn-5:checked ~ .slider > .slide--5 {
+  z-index: 9;
+  opacity: 1;
+}
+
+/* окончание слайдера */
+
+.advantage__indicators {
+  padding-bottom: 90vw;
+  margin-bottom: 80px;
+
+  background: url('../img/a-indicators-s.jpg') -11px bottom no-repeat;
+  background-size: 100%;
+}
+
+.indicators__text {
+  margin: 0 11px 18px 11px;
+  line-height: 7vw;
+}
+
+.advantage__modes {
+  padding-bottom: 100vw;
+  margin-bottom: 80px;
+
+  background: url('../img/a-modes-s.jpg') -11px bottom no-repeat;
+  background-size: 100%;
+}
+
+.modes__text {
+  font-weight: 300;
+  margin: 0 30px 35px;
+}
+
+.modes__text--bold {
+  font-weight: 700;
+}
+
+.modes__list {
+  margin: 0 30px 35px;
+}
+
+.advantage__description {
+  margin: 0;
+  margin-left: 30px;
+}
+
+.advantage__namepad {
+  display: flex;
+}
+
+.advantage__name {
+  font-size: 4.4vw;
+  font-weight: 300;
+  color: #666666;
+  text-align: left;
+}
+
+.advantage__valuerow {
+  display: flex;
+}
+
+.advantage__valuerow td:first-child {
+  margin-left: -10px;
+  flex-shrink: 0;
+}
+
+.modes__value--1 {
+  margin-right: 40px;
+  width: 40vw;
+}
+
+.modes__name--1 {
+  margin-right: 40px;
+  width: 40vw;
+}
+
+.advantage__valuerow td:last-child {
+  flex-grow: 1;
+}
+
+.advantage__value {
+  font-size: 12.5vw;
+  font-weight: 400;
+  color: #3a30f8;
+  letter-spacing: -5px;
+  word-spacing: -80%;
+}
+
+.advantage__value--unit {
+  font-size: 5.6vw;
+  letter-spacing: -1px;
+}
+
+.advantage__namepad th:first-child {
+  flex-shrink: 0;
+}
+
+.advantage__battery {
+  padding-bottom: 100vw;
+  margin-bottom: 80px;
+
+  background: url('../img/a-battery-s.png') -11px bottom no-repeat;
+  background-size: 100%;
+}
+
+.battery__text {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.battery__value--1 {
+  margin-right: 40px;
+}
+
+.battery__name--1 {
+  margin-right: 40px;
+}
+
+.advantage__electronics {
+  padding-right: 20px;
+  margin-bottom: 80px;
+
+  background:
+              url('../img/blue-triangle-s.png') 50% 50% no-repeat,
+              url('../img/white-circle-s.png') 50% 50% no-repeat;
+  background-size:
+              28px 28px,
+              60px 60px;
+}
+
+.electronics__novideo {
+  width: 100vw;
+  margin-left: -11px;
+}
+
+.electronics__text {
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.electronics__text--bold {
+  font-weight: 700;
+}
+
+.electronics__description {
+  margin-right: 30px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.electronics__value {
+  width: 40%;
+  position: relative;
+}
+
+.electronics__stub--1 {
+  width: 17vw;
+  height: 13vw;
+  background: url('../img/power-s.png') center 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+
+.electronics__stub--2 {
+  width: 21.5vw;
+  height: 7vw;
+  background: url('../img/gyro-s.png') center 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 50%;
+}
+
+.electronics__valuerow {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.electronics__valuerow  td:first-child {
+  margin: 0;
+}
+
+.electronics__valuerow  td:last-child {
+  flex-grow: 0;
+}
+
+.electronics__value--1 {
+
+}
+
+.electronics__value--2 {
+
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.electronics__namepad {
+  justify-content: space-between;
+}
+
+.electronics__name {
+  width: 40%;
+}
+
+/* вторая секция */
+
+.specifications__title {
+
+}
+
+.specifications__logotitle {
+  margin: 0 60px 35px;
+  text-align: center;
+  font-size: 7.5vw;
+  line-height: 11.2vw;
+}
+
+.specifications__subtitle {
+  margin: 0;
+  padding-top: 19vw;
+
+  font-size: 5vw;
+  line-height: 9.4vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.specifications__sublogo {
+  background-position: center top;
+  background-size: auto 16vw;
+  background-repeat: no-repeat;
+
+  margin-bottom: 35px;
+}
+
+.specifications__shell {
+  background-image: url('../img/body.svg');
+}
+
+.specifications__text {
+  font-size: 4.4vw;
+  line-height: 11.2vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+.specifications__bold {
+  font-weight: 700;
+}
+
+.specifications__wheels {
+  background-image: url('../img/wheels.svg');
+}
+
+.specifications__power {
+  background-image: url('../img/power.svg');
+}
+
+.specifications__weight {
+  background-image: url('../img/weight.svg');
+}
+
+/* Третья секция */
+
+.target-group {
+  position: relative;
+  margin: 0;
+  padding-top: 33vw;
+}
+
+.target-group__sublogo {
+  position: absolute;
+  width: calc(100vw - 22px);
+  height: 100vw;
+
+  top: 0;
+
+  background: url('../img/sublogo-tg.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.target-group__logotitle {
+  color: #a598f6;
+  font-size: 17.6vw;
+  text-align: right;
+}
+
+.target-group__title {
+  color: #ffffff;
+}
+
+.target-group__description {
+  padding-top: 50vw;
+  background-color: #3a30f8;
+}
+
+.target-group__text {
+  font-size: 5vw;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 5vw;
+}
+
+.target-group__bold {
+  font-weight: 700;
+}
+
+.btn {
+  margin: 0 auto;
+  padding: 5px 15px;
+  text-align: center;
+
+  background-color: #ffffff;
+  border-radius: 15%/85%;
+
+  font-size: 4.4vw;
+  line-height: 9.4vw;
+  font-weight: 700;
+  color: #3a2ff8;
+  box-shadow: 0 1vw 5px 0 #2f26c8;
+}
+
+.btn--to-catalog {
+  width: 76vw;
+  position: relative;
+  margin: 35px calc(12vw - 11px) 80px;
+}
+
+.footer {
+  background-color: #292929;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 3.75vw;
+  line-height: 9.4vw;
+  font-weight: 300;
+  text-align: center;
+  color: #605f5f;
+}
