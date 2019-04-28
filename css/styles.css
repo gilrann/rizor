@@ -177,7 +177,7 @@ body {
   position: absolute;
   width: 30px;
   height: 5px;
-  top: 2.5vw;
+  top: 20%;
   left: 0;
   background-color: #000000;
 }
@@ -612,7 +612,7 @@ body {
   font-size: 5vw;
   font-weight: 300;
   color: #ffffff;
-  margin-bottom: 5vw;
+  margin-bottom: 16px;
 }
 
 .target-group__bold {
