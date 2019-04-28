@@ -75,11 +75,15 @@ body {
   padding: 0 11px;
 }
 
+/* хедер */
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
+
+/* основное содержание */
 
 .main__screen {
   background: url('../img/title-back-s.jpg') 0 0 no-repeat #b644fb;
@@ -635,6 +639,8 @@ body {
   position: relative;
   margin: 35px calc(12vw - 11px) 80px;
 }
+
+/* Футер */
 
 .footer {
   background-color: #292929;
