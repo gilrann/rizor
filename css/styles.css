@@ -104,7 +104,7 @@ body {
 
   font-weight: 700;
   font-size:3.75vw;
-  line-height: 6.25vw;
+  line-height: 1.5;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -116,7 +116,7 @@ body {
 
   font-weight: 700;
   font-size: 4.4vw;
-  line-height: 25vw;
+  line-height: 5.7;
   text-transform: uppercase;
   color: #3a30f8;
   text-align: center;
@@ -323,7 +323,7 @@ body {
 
 .indicators__text {
   margin: 0 11px 18px 11px;
-  line-height: 7vw;
+  line-height: 1.4;
 }
 
 .advantage__modes {
@@ -521,7 +521,7 @@ body {
   margin: 0 60px 35px;
   text-align: center;
   font-size: 7.5vw;
-  line-height: 11.2vw;
+  line-height: 1.5;
 }
 
 .specifications__subtitle {
@@ -529,7 +529,7 @@ body {
   padding-top: 19vw;
 
   font-size: 5vw;
-  line-height: 9.4vw;
+  line-height: 1.9;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -549,7 +549,7 @@ body {
 
 .specifications__text {
   font-size: 4.4vw;
-  line-height: 11.2vw;
+  line-height: 2.5;
   font-weight: 300;
   text-align: center;
 }
@@ -624,7 +624,7 @@ body {
   border-radius: 15%/85%;
 
   font-size: 4.4vw;
-  line-height: 9.4vw;
+  line-height: 2;
   font-weight: 700;
   color: #3a2ff8;
   box-shadow: 0 1vw 5px 0 #2f26c8;
@@ -643,7 +643,7 @@ body {
 .footer__copyright {
   margin: 0;
   font-size: 3.75vw;
-  line-height: 9.4vw;
+  line-height: 2.5;
   font-weight: 300;
   text-align: center;
   color: #605f5f;
