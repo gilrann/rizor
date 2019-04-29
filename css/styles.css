@@ -365,6 +365,7 @@ body {
   font-weight: 300;
   color: #666666;
   text-align: left;
+  width: 40vw;
 }
 
 .advantage__valuerow {
@@ -396,6 +397,7 @@ body {
   color: #3a30f8;
   letter-spacing: -5px;
   word-spacing: -80%;
+  width: 40vw;
 }
 
 .advantage__value--unit {
