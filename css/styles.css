@@ -443,18 +443,20 @@ body {
 .advantage__electronics {
   padding-right: 20px;
   margin-bottom: 80px;
-
-  background:
-              url('../img/blue-triangle-s.png') 50% 50% no-repeat,
-              url('../img/white-circle-s.png') 50% 50% no-repeat;
-  background-size:
-              28px 28px,
-              60px 60px;
 }
 
 .electronics__novideo {
+  position: relative;
   width: 100vw;
   margin-left: -11px;
+  background:
+              url('../img/blue-triangle-s.png') 50% 50% no-repeat,
+              url('../img/white-circle-s.png') 50% 50% no-repeat,
+              url('../img/a-electronics-s.jpg') 0 0 no-repeat;
+  background-size:
+              28px 28px,
+              60px 60px,
+              cover;
 }
 
 .electronics__text {
