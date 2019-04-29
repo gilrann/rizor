@@ -198,22 +198,25 @@ body {
 
 .color__list {
   display: flex;
-  width: 75vw;
-  justify-content: space-between;
+  justify-content: center;
 
   align-self: center;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .color__item {
   position: relative;
-
   width: 6vw;
   height: 6vw;
   border-radius: 50%;
   border: solid 3px #ffffff;
 
   cursor: pointer;
+
+  margin-bottom: 30px;
+  margin-right: 5%;
 }
 
 .color__item--yellow {background-color: yellow;}
@@ -223,32 +226,39 @@ body {
 .color__item--black {background-color: black; }
 
 /* начало слайдера */
-.slider-switcher label::after {
+
+.slider__switcher label:first-of-type {
+}
+
+.slider__switcher label:last-of-type {
+  margin-right: 0;
+}
+
+.slider-switcher label::before {
   content: "";
   position: absolute;
-  width: 6vw;
-  height: 6vw;
-  border: 3px solid #ac38e1;
-  border-radius: 50%;
+  width: 5px;
+  height: 48px;
+  background-color: black;
   top: 0;
   left: 0;
 
-  display: none;
+  display: block;
 }
 
-#btn-1:checked ~ .slider-switcher label[for="btn-1"]::after {
+#btn-1:checked ~ .slider-switcher label[for="btn-1"]::before {
   display: block;
 }
-#btn-2:checked ~ .slider-switcher label[for="btn-2"]::after {
+#btn-2:checked ~ .slider-switcher label[for="btn-2"]::before {
   display: block;
 }
-#btn-3:checked ~ .slider-switcher label[for="btn-3"]::after {
+#btn-3:checked ~ .slider-switcher label[for="btn-3"]::before {
   display: block;
 }
-#btn-4:checked ~ .slider-switcher label[for="btn-4"]::after {
+#btn-4:checked ~ .slider-switcher label[for="btn-4"]::before {
   display: block;
 }
-#btn-5:checked ~ .slider-switcher label[for="btn-5"]::after {
+#btn-5:checked ~ .slider-switcher label[for="btn-5"]::before {
   display: block;
 }
 
@@ -260,9 +270,9 @@ body {
   border: solid 3px #9045fe;
 }
 
-.color__item:hover {
+/* .color__item:hover {
   border: solid 3px #9045fe;
-}
+} */
 
 .color__text {
   margin: 0 30px 35px 30px;
