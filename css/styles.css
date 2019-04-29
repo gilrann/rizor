@@ -270,9 +270,9 @@ body {
   border: solid 3px #9045fe;
 }
 
-/* .color__item:hover {
+.color__item:hover {
   border: solid 3px #9045fe;
-} */
+}
 
 .color__text {
   margin: 0 30px 35px 30px;
@@ -406,7 +406,7 @@ body {
   font-weight: 400;
   color: #3a30f8;
   letter-spacing: -5px;
-  word-spacing: -80%;
+  word-spacing: -35px;
   width: 40vw;
 }
 
