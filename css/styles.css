@@ -83,16 +83,97 @@ body {
   padding: 20px;
 }
 
+.header__mainlogo {
+  width: 120px;
+  height: 30px;
+}
+
+.menu__list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 0 22px;
+  }
+  .header__logo {
+    align-self: center;
+  }
+
+  .header__mainlogo {
+    width: 156px;
+    height: 39px;
+  }
+  .header__menu svg {
+    display: none;
+  }
+
+  .menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__item {
+
+  }
+
+  .menu__anchor {
+    font-size: 12px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+
+    padding: 5px;
+  }
+
+  .menu__anchor:visited {
+    color: rgba(58, 48, 248, 0.7);
+
+  }
+  .menu__anchor:active {
+    color: #3a30f8;
+  }
+  .menu__anchor:hover,
+  .menu__anchor:focus {
+    outline: solid 2px #3a30f8;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header {
+    margin: 0 375px;
+  }
+}
+
 /* основное содержание */
 
 .main__screen {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 42vw;
+}
+
+.main__background {
   background: url('../img/title-back-s.jpg') 0 0 no-repeat #b644fb;
   background-size: cover;
-  padding-top: 135px;
-  padding-bottom: 135px;
+  width: 100vw;
+  height: 135vw;
+
+  margin-top: -100%;
 }
 
 .main__title {
+  position: relative;
   margin: 0;
   margin-bottom: 20px;
   padding: 0 11px;
@@ -102,6 +183,7 @@ body {
 }
 
 .main__subtitle {
+  position: relative;
   margin: 0;
   padding: 0 11px;
   width: 75vw;
@@ -112,6 +194,60 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .main__screen {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20vw;
+    width: 100vw;
+    height:  98vw;
+  }
+
+  .main__background {
+    background: url('../img/title-back-m.png') 0 0 no-repeat #b644fb;
+    background-size: cover;
+    width: 62vw;
+    height: 98vw;
+    margin: 0;
+    margin-left: -32vw;
+    flex-shrink: 0;
+    order: 3;
+  }
+
+  .main__title {
+    position: relative;
+    margin: 0;
+    margin-top: 33vw;
+    margin-bottom: 20px;
+    padding: 0 11px;
+
+    font-size: 8vw;
+    color: #000000;
+
+    width: 70vw;
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .main__subtitle {
+    position: relative;
+    margin: 0;
+    padding: 0 11px;
+    width: 30vw;
+
+    font-weight: 700;
+    font-size:2vw;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #000000;
+    order: 2;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 1920px) {}
+
+
 
 .section-title {
   margin: 0;
