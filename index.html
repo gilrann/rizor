@@ -48,7 +48,8 @@
 
       <section class="advantage">
         <h2 class="advantage__title section-title frr" id="advantage">Преимущества</h2>
-        <div class="advantage__design  container">
+
+        <div class="advantage__design container">
           <h3 class="advantage__subtitle frmo">Дизайн</h3>
           <p class="advantage__text design__text fmp">Внешний вид скутера дышит идеями футуризма:</p>
           <ul class="advantage__list">
@@ -63,20 +64,22 @@
             </li>
           </ul>
         </div>
-        <div class="advantage__color  container">
-          <h3 class="advantage__subtitle frmo">Цвет</h3>
-          <p class="advantage__text color__text frr">Модель представлена сразу в нескольких цветах</p>
+        <div class="advantage__color container">
+          <div class="color-text-wrapper">
+            <h3 class="advantage__subtitle frmo">Цвет</h3>
+            <p class="advantage__text color__text frr">Модель представлена сразу в нескольких цветах</p>
+          </div>
           <div class="slider__switcher color__list">
             <input class="hidden" type="radio" id="btn-1" name="color-toggle">
             <input class="hidden" type="radio" id="btn-2" name="color-toggle">
             <input class="hidden" type="radio" id="btn-3" name="color-toggle">
             <input class="hidden" type="radio" id="btn-4" name="color-toggle">
             <input class="hidden" type="radio" id="btn-5" name="color-toggle" checked="checked">
-            <label for="btn-1" class="color__toggle color__item color__item--yellow"></label>
-            <label for="btn-2" class="color__toggle color__item color__item--blue"></label>
-            <label for="btn-3" class="color__toggle color__item color__item--red"></label>
-            <label for="btn-4" class="color__toggle color__item color__item--white"></label>
-            <label for="btn-5" class="color__toggle color__item color__item--black"></label>
+            <label for="btn-1" class="color__toggle color__item color__item--yellow"><span class="hidden">.</span></label>
+            <label for="btn-2" class="color__toggle color__item color__item--blue"><span class="hidden">.</span></label>
+            <label for="btn-3" class="color__toggle color__item color__item--red"><span class="hidden">.</span></label>
+            <label for="btn-4" class="color__toggle color__item color__item--white"><span class="hidden">.</span></label>
+            <label for="btn-5" class="color__toggle color__item color__item--black"><span class="hidden">.</span></label>
             <ul class="advantage__list colorscheme__list slider">
               <li class="colorscheme__item slide slide--1">
                 <span class="hidden">Rizor Hovertrax 4.0 в желтой цветовой схеме</span>
