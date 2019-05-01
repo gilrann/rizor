@@ -53,6 +53,7 @@ input[type="radio"].hidden {
   overflow: hidden;
 }
 
+*, *::before, *::after {box-sizing: inherit;}
 
 body {
   background-color: #ffffff;
@@ -81,6 +82,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .header__mainlogo {
@@ -156,6 +158,8 @@ body {
 }
 
 /* основное содержание */
+
+.main {box-sizing: border-box;}
 
 .main__screen {
   display: flex;
@@ -800,6 +804,7 @@ body {
 
 .footer {
   background-color: #292929;
+  box-sizing: border-box;
 }
 
 .footer__copyright {
