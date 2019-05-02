@@ -774,6 +774,7 @@ body {
     margin-right: 545px;
     width: 43.2vw;
     padding-bottom: 22.7vw;
+    margin-bottom: 160px;
   }
 }
 
@@ -795,7 +796,6 @@ body {
 
 @media (min-width: 1920px) {
   .indicators__subtitle {
-
   margin-left: 100px;
   }
 
@@ -826,6 +826,56 @@ body {
   margin: 0 30px 35px;
 }
 
+@media (min-width: 768px) {
+  .advantage__modes {
+    background: url('../img/a-modes-m.png') right top no-repeat;
+    padding: 0;
+    margin: 0;
+    margin-left: 95px;
+    margin-bottom: 13vw;
+  }
+  .modes__subtitle {
+
+  padding-top: 13.7vw;
+  }
+  .modes__text {
+
+  margin: 0;
+  margin-bottom: 30px;
+  width: 220px;
+  }
+  .modes__text--bold {
+
+  }
+  .modes__list {
+
+  margin: 0;
+  margin-bottom: 35px;
+  width: 220px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .advantage__modes {
+    margin-left: -19.8vw;
+    background: url('../img/a-modes-l.png') right top no-repeat;
+  }
+  .modes__subtitle {
+    padding-top: 90px;
+  }
+  .modes__text {
+    font-size: 18px;
+    width: 385px;
+  }
+  .modes__text--bold {}
+  .modes__list {width: 385px;}
+  .modes__item {
+    
+  font-family: 'Roboto', "Trebuchet MS", "Helvetica CY", sans-serif;
+  font-weight: 300;
+  }
+}
+
 .advantage__description {
   margin: 0;
   margin-left: 30px;
@@ -836,7 +886,7 @@ body {
 }
 
 .advantage__name {
-  font-size: 4.4vw;
+  font-size: 14px;
   font-weight: 300;
   color: #666666;
   text-align: left;
@@ -856,7 +906,7 @@ body {
 }
 
 .advantage__value {
-  font-size: 12.5vw;
+  font-size: 40px;
   font-weight: 400;
   color: #3a30f8;
   letter-spacing: -5px;
@@ -865,10 +915,10 @@ body {
 }
 
 .advantage__value--unit {
-  font-size: 5.6vw;
+  font-size: 18px;
   letter-spacing: -1px;
   color: #3a30f8;
-  padding-top: 6vw;
+  padding-top: 20px;
 }
 
 .advantage__namepad th:first-child {
@@ -883,6 +933,99 @@ body {
 .modes__name--1 {
   width: 50vw;
 }
+
+@media (min-width: 768px) {
+  .advantage__description {
+    margin: 0;
+  }
+
+  .advantage__namepad {
+    width: 250px;
+  }
+
+  .advantage__name {
+  }
+
+  .advantage__valuerow {
+    display: flex;
+    width: 250px;
+  }
+
+  .advantage__valuerow td:first-child {
+  }
+
+  .advantage__valuerow td:last-child {
+  }
+
+  .advantage__value--unit {
+    margin-left: 10px;
+  }
+
+  .advantage__namepad th:first-child {
+  }
+
+  .modes__value--1 {
+    width: 65%;
+  }
+
+  .modes__name--1 {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .advantage__description {
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .advantage__namepad {
+    display: flex;
+  }
+
+  .advantage__name {
+    font-size: 4.4vw;
+    font-weight: 300;
+    color: #666666;
+    text-align: left;
+  }
+
+  .advantage__valuerow {
+    display: flex;
+  }
+
+  .advantage__valuerow td:first-child {
+    margin-left: -10px;
+    flex-shrink: 0;
+  }
+
+  .advantage__valuerow td:last-child {
+    flex-grow: 0;
+  }
+
+  .advantage__value {
+    font-size: 60px;
+  }
+
+  .advantage__value--unit {
+    font-size: 24px;
+    padding-top: 26px;
+  }
+
+  .advantage__namepad th:first-child {
+    flex-shrink: 0;
+  }
+
+  .modes__value--1 {
+    width: 50vw;
+    display: flex;
+  }
+
+  .modes__name--1 {
+    width: 50vw;
+  }
+}
+
 
 .advantage__battery {
   padding-bottom: 100vw;
