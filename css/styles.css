@@ -444,17 +444,27 @@ body {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .color__list {
+    display: flex;
+    flex-direction: column;
+
+    height: 39vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-right: 6.5vw;
+    margin-left: 5.2vw;
+}
+
 .color__item {
   position: relative;
-  width: 6vw;
-  height: 6vw;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: solid 3px #ffffff;
 
   cursor: pointer;
 
-  margin-bottom: 30px;
-  margin-right: 5%;
 }
 
 .color__item--yellow {background-color: yellow;}
@@ -462,6 +472,14 @@ body {
 .color__item--red {background-color: red; }
 .color__item--white {background-color: #f0efef; }
 .color__item--black {background-color: black; }
+
+@media (min-width: 768px) {
+  .color__item--yellow {order: 1;}
+  .color__item--blue {order: 2; }
+  .color__item--red {order: 3; }
+  .color__item--white {order: 4; }
+  .color__item--black {order: 5; }
+}
 
 /* начало слайдера */
 
@@ -475,11 +493,11 @@ body {
 .color__item::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 47px;
+  width: 47px;
+  height: 1px;
   background-color: #cdcdcd;
-  top: 20px;
-  left: 50%;
+  top: 50%;
+  left: -450%;
 
   display: none;
 }
@@ -523,6 +541,13 @@ body {
   height: 80vw;
 }
 
+@media (min-width: 768px) {
+  .colorscheme__list {
+    width: 44.8vw;
+    height: 39vw;
+  }
+}
+
 .slide {
   position: absolute;
   left: 0;
@@ -531,6 +556,13 @@ body {
   opacity: 0;
   width: 100vw;
   height: 80vw;
+}
+
+@media (min-width: 768px) {
+  .slide {
+    width: 44.8vw;
+    height: 39vw;
+  }
 }
 
 .slide--1 {
@@ -552,6 +584,33 @@ body {
 .slide--5 {
   background: url('../img/rizor-black-s.png') 0 0 no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .slide--1 {
+    background: url('../img/rizor-black-m.png') 0 0 no-repeat;
+    background-size: cover;
+    filter: sepia(1) saturate(300%) brightness(150%);
+  }
+  .slide--2 {
+    background: url('../img/rizor-black-m.png') 0 0 no-repeat;
+    background-size: cover;
+    filter: sepia(1) saturate(300%) brightness(150%) hue-rotate(180deg);
+  }
+  .slide--3 {
+    background: url('../img/rizor-black-m.png') 0 0 no-repeat;
+    background-size: cover;
+    filter: sepia(.8) saturate(400%) brightness(200%) hue-rotate(-49deg);
+  }
+  .slide--4 {
+    background: url('../img/rizor-black-m.png') 0 0 no-repeat;
+    background-size: cover;
+    filter: invert(100%);
+  }
+  .slide--5 {
+    background: url('../img/rizor-black-m.png') 0 0 no-repeat;
+    background-size: cover;
+  }
 }
 
 #btn-1:checked ~ .slider .slide--1,
