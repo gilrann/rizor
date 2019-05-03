@@ -583,7 +583,6 @@ body {
     width: 44.8vw;
   }
   .slider__switcher label:first-of-type {
-    margin-left: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -673,6 +672,9 @@ body {
     flex-direction: row;
     margin: 0;
     flex-shrink: 0;
+  }
+  .slider__switcher label:first-of-type {
+    margin-left: 100px;
   }
 }
 @media (min-width: 1920px) {
@@ -859,6 +861,8 @@ body {
   .advantage__modes {
     margin-left: -19.8vw;
     background: url('../img/a-modes-l.png') right top no-repeat;
+    padding-bottom: 15vw;
+    margin-bottom: 150px;
   }
   .modes__subtitle {
     padding-top: 90px;
@@ -870,7 +874,7 @@ body {
   .modes__text--bold {}
   .modes__list {width: 385px;}
   .modes__item {
-    
+
   font-family: 'Roboto', "Trebuchet MS", "Helvetica CY", sans-serif;
   font-weight: 300;
   }
@@ -947,11 +951,11 @@ body {
   }
 
   .advantage__valuerow {
-    display: flex;
     width: 250px;
   }
 
   .advantage__valuerow td:first-child {
+  margin-left: 0;
   }
 
   .advantage__valuerow td:last-child {
@@ -962,6 +966,7 @@ body {
   }
 
   .advantage__namepad th:first-child {
+  padding-bottom: 20px;
   }
 
   .modes__value--1 {
@@ -977,30 +982,27 @@ body {
   .advantage__description {
     margin: 0;
     margin-left: 30px;
+    width: 370px;
   }
 
   .advantage__namepad {
-    display: flex;
+  width: 370px;
   }
 
   .advantage__name {
-    font-size: 4.4vw;
-    font-weight: 300;
-    color: #666666;
-    text-align: left;
+    font-size: 16px;
   }
 
   .advantage__valuerow {
-    display: flex;
+    width: 370px;
   }
 
   .advantage__valuerow td:first-child {
-    margin-left: -10px;
-    flex-shrink: 0;
+    flex-grow: 0;
   }
 
   .advantage__valuerow td:last-child {
-    flex-grow: 0;
+    flex-grow: 1;
   }
 
   .advantage__value {
@@ -1013,20 +1015,20 @@ body {
   }
 
   .advantage__namepad th:first-child {
-    flex-shrink: 0;
   }
 
   .modes__value--1 {
-    width: 50vw;
+    width: 60%;
     display: flex;
   }
 
   .modes__name--1 {
-    width: 50vw;
+  width: 50%;
+  margin-right: 9%;
   }
 }
 
-
+/* BATTERY */
 .advantage__battery {
   padding-bottom: 100vw;
   margin-bottom: 80px;
@@ -1054,9 +1056,101 @@ body {
   width: 40vw;
 }
 
+@media (min-width: 768px) {
+  .advantage__battery {
+    padding-left: 45.8vw;
+    margin-bottom: 100px;
+
+    background: url('../img/a-battery-m.png') left top no-repeat;
+    background-size: 39.7vw 39vw;
+    padding-bottom: 0;
+  }
+
+  .battery__subtitle {
+  padding-top: 7vw;
+  }
+
+  .battery__description {
+    margin-left: -36.3vw;
+  }
+
+  .battery__text {
+  margin-right: 30px;
+  }
+
+  .battery__value {
+    display: flex;
+  }
+
+  .battery__value--1 {
+    width: 40%;
+  }
+
+  .battery__name--1 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .battery {
+  }
+
+  .advantage__battery {
+
+    background: url('../img/a-battery-l.png') left top no-repeat;
+    background-size: 367px 300px;
+    flex-direction: column;
+    width: 26vw;
+    display: flex;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    padding-top: 235px;
+    margin-left: -19.3vw;
+  }
+
+  .battery__subtitle {
+  order: 2;
+  padding: 0;
+  }
+
+  .battery__description {
+    margin-left: 0;
+    order: 1;
+    margin-bottom: 90px;
+  }
+
+  .battery__text {
+  order: 2;
+  font-size: 18px;
+  line-height: 30px;
+  margin-right: 0;
+  }
+
+  .battery__value {
+    display: flex;
+  }
+
+  .battery__value--1 {
+    width: 40%;
+  }
+
+  .battery__name--1 {
+    width: 40%;
+  }
+}
+
+/* ELECTRONICS */
+
 .advantage__electronics {
   padding-right: 20px;
   margin-bottom: 80px;
+  padding-bottom: 86.6vw;
+
+  background:
+              url('../img/play-s.png') left 50% bottom 39vw no-repeat, url('../img/a-electronics-s.jpg') 0 bottom no-repeat;
+  background-size:
+              60px 60px, 100vw 86.6vw;
 }
 
 .electronics__novideo {
@@ -1095,8 +1189,8 @@ body {
 }
 
 .electronics__stub--1 {
-  width: 17vw;
-  height: 13vw;
+  width: 54px;
+  height: 42px;
   background: url('../img/power-s.png') center 0 no-repeat;
   background-size: cover;
   position: relative;
@@ -1104,8 +1198,8 @@ body {
 }
 
 .electronics__stub--2 {
-  width: 21.5vw;
-  height: 7vw;
+  width: 69px;
+  height: 22px;
   background: url('../img/gyro-s.png') center 0 no-repeat;
   background-size: cover;
   position: relative;
@@ -1141,6 +1235,157 @@ body {
 
 .electronics__name {
   width: 40%;
+}
+
+@media (min-width: 768px) {
+  .advantage__electronics {
+    margin: 0 73px 80px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background:
+                url('../img/play-m.png') left 50% top 18vw no-repeat, url('../img/a-electronics-m.png') 0 0 no-repeat;
+    background-size:
+                60px 60px, 100% auto;
+    padding-top: 45vw;
+    max-height: 620px;
+  }
+
+  .electronics__subtitle {
+
+  }
+
+  .electronics__text {
+    padding-left: 0;
+    width: 279px;
+  }
+
+  .electronics__text--bold {
+    font-weight: 700;
+  }
+
+  .electronics__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  }
+
+  .electronics__tbody {
+    display: flex;
+  }
+
+  .electronics__value {
+  width: 100%;
+  }
+
+  .electronics__stub--1 {
+  margin: 0 auto;
+  }
+
+  .electronics__stub--2 {
+  top: 0;
+  margin: 0 auto;
+  }
+
+  .electronics__valuerow {
+  flex-direction: column;
+  width: 83px;
+  justify-content: flex-start;
+  }
+
+  .electronics__valuerow  td:first-child {
+  margin-bottom: 95px;
+  }
+
+  .electronics__valuerow  td:last-child {
+    flex-grow: 0;
+  }
+
+  .electronics__value--1 {
+
+  }
+
+  .electronics__value--2 {
+
+    vertical-align: bottom;
+    text-align: center;
+  }
+
+  .electronics__namepad {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: -80px;
+    width: 83px;
+  }
+
+  .electronics__name {
+  width: 83px;
+  margin-top: 60px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .advantage__electronics {
+
+  }
+
+  .electronics__novideo {
+
+  }
+
+  .electronics__text {
+
+  }
+
+  .electronics__text--bold {
+
+  }
+
+  .electronics__description {
+
+  }
+
+  .electronics__value {
+
+  }
+
+  .electronics__stub--1 {
+
+  }
+
+  .electronics__stub--2 {
+
+  }
+
+  .electronics__valuerow {
+
+  }
+
+  .electronics__valuerow  td:first-child {
+
+  }
+
+  .electronics__valuerow  td:last-child {
+
+  }
+
+  .electronics__value--1 {
+
+  }
+
+  .electronics__value--2 {
+
+  }
+
+  .electronics__namepad {
+
+  }
+
+  .electronics__name {
+
+  }
 }
 
 /* вторая секция */
