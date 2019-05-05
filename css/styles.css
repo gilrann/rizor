@@ -1002,7 +1002,6 @@ body {
   }
 
   .advantage__valuerow td:last-child {
-    flex-grow: 1;
   }
 
   .advantage__value {
@@ -1015,6 +1014,11 @@ body {
   }
 
   .advantage__namepad th:first-child {
+  padding: 0;
+  }
+  
+  .electronics__namepad th:first-child {
+  padding-right: 50%;
   }
 
   .modes__value--1 {
@@ -1270,24 +1274,20 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  }
+}
 
   .electronics__tbody {
-    display: flex;
-  }
+    display: flex;}
 
   .electronics__value {
-  width: 100%;
-  }
+  width: 100%;}
 
   .electronics__stub--1 {
-  margin: 0 auto;
-  }
+  margin: 0 auto;}
 
   .electronics__stub--2 {
   top: 0;
-  margin: 0 auto;
-  }
+  margin: 0 auto; }
 
   .electronics__valuerow {
   flex-direction: column;
@@ -1300,7 +1300,6 @@ body {
   }
 
   .electronics__valuerow  td:last-child {
-    flex-grow: 0;
   }
 
   .electronics__value--1 {
@@ -1329,6 +1328,17 @@ body {
 @media (min-width: 1920px) {
   .advantage__electronics {
 
+  margin: 0;
+  padding: 0;
+  background: url('../img/play-m.png') left 50% bottom 100px no-repeat, url('../img/a-electronics-l.png') 0 bottom no-repeat;
+  background-size: 100px 100px, 400px 280px;
+  padding-bottom: 340px;
+  margin-top: -800px;
+  margin-left: 300px;
+  margin-bottom: 200px;
+  width: 400px;
+  max-height: 735px;
+  flex-wrap: nowrap;
   }
 
   .electronics__novideo {
@@ -1337,6 +1347,9 @@ body {
 
   .electronics__text {
 
+  width: 430px;
+  font-size: 18px;
+  line-height: 1.5;
   }
 
   .electronics__text--bold {
@@ -1345,6 +1358,14 @@ body {
 
   .electronics__description {
 
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  }
+
+  .electronics__tbody {
+    display: table;
   }
 
   .electronics__value {
@@ -1353,22 +1374,40 @@ body {
 
   .electronics__stub--1 {
 
+  margin: 0;
+  background: url('../img/power-l.png') center 0 no-repeat;
+  background-size: cover;
+  width: 76px;
+  height: 60px;
   }
 
   .electronics__stub--2 {
 
+  top: initial;
+  bottom: 1px;
+  margin: 0;
+  margin-top: 30px;
+  width: 98px;
+  height: 32px;
   }
 
   .electronics__valuerow {
 
+  width: 400px;
+  margin: 0;
+  flex-direction: row;
+  margin-bottom: 25px;
   }
 
   .electronics__valuerow  td:first-child {
 
+  margin: 0;
+  width: 50%;
   }
 
   .electronics__valuerow  td:last-child {
 
+  width: 50%;
   }
 
   .electronics__value--1 {
@@ -1377,14 +1416,21 @@ body {
 
   .electronics__value--2 {
 
+  flex-shrink: 0;
   }
 
   .electronics__namepad {
 
+  width: auto;
+  margin: 0;
+  flex-direction: row;
   }
 
   .electronics__name {
 
+  margin: 0;
+  width: 50%;
+  padding-right: 50%;
   }
 }
 
