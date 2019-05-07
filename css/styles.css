@@ -1016,7 +1016,7 @@ body {
   .advantage__namepad th:first-child {
   padding: 0;
   }
-  
+
   .electronics__namepad th:first-child {
   padding-right: 50%;
   }
@@ -1419,12 +1419,7 @@ body {
   flex-shrink: 0;
   }
 
-  .electronics__namepad {
-
-  width: auto;
-  margin: 0;
-  flex-direction: row;
-  }
+  .electronics__namepad {width: 400px;margin: 0;flex-direction: row;}
 
   .electronics__name {
 
@@ -1443,15 +1438,62 @@ body {
 .specifications__logotitle {
   margin: 0 60px 35px;
   text-align: center;
-  font-size: 7.5vw;
+  font-size: 24px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .specifications {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .specifications::before {
+    content: url('../img/scooter-m.png');
+    position: absolute;
+    width: 403px;
+    height: 375px;
+    left:0;
+    top:0;
+  }
+
+  .specifications__title {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    padding-left: 60vw;
+    margin: 0;
+    line-height: normal;
+    margin-bottom: 75px;
+  }
+
+  .specifications__logotitle {
+    margin: 0;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 200px;
+    align-self: flex-end;
+    margin-right: 95px;
+    margin-bottom: 105px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .specifications__title {
+  }
+
+  .specifications__logotitle {
+  }
 }
 
 .specifications__subtitle {
   margin: 0;
   padding-top: 19vw;
 
-  font-size: 5vw;
+  font-size: 16px;
   line-height: 1.9;
   font-weight: 700;
   text-transform: uppercase;
@@ -1491,6 +1533,57 @@ body {
 
 .specifications__weight {
   background-image: url('../img/weight.png');
+}
+
+@media (min-width: 768px) {
+  .specifications__subtitle {
+    padding-top: 75px;
+
+    text-align: left;
+  }
+
+  .specifications__sublogo {
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    background-size: auto 53px;
+  }
+
+  .specifications__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 95px;
+    margin-bottom: 145px;
+  }
+
+  .specifications__shell {
+    background-image: url('../img/body.png');
+  }
+
+  .specifications__text {
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .specifications__bold {
+    font-weight: 700;
+  }
+
+  .specifications__wheels {
+    background-image: url('../img/wheels.png');
+  }
+
+  .specifications__power {
+    background-image: url('../img/power.png');
+  }
+
+  .specifications__weight {
+    background-image: url('../img/weight.png');
+  }
 }
 
 /* Третья секция */
