@@ -1063,11 +1063,15 @@ body {
 @media (min-width: 768px) {
   .advantage__battery {
     padding-left: 45.8vw;
-    margin-bottom: 100px;
+    margin-bottom: 1.3vw;
 
     background: url('../img/a-battery-m.png') left top no-repeat;
-    background-size: 39.7vw 39vw;
-    padding-bottom: 0;
+    background-size: 39.7vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 19vw;
+    position: relative;
   }
 
   .battery__subtitle {
@@ -1075,7 +1079,9 @@ body {
   }
 
   .battery__description {
-    margin-left: -36.3vw;
+  position: absolute;
+  left: 94px;
+  top: 33vw;
   }
 
   .battery__text {
@@ -1122,6 +1128,7 @@ body {
     margin-left: 0;
     order: 1;
     margin-bottom: 90px;
+    position: initial;
   }
 
   .battery__text {
@@ -1243,18 +1250,15 @@ body {
 
 @media (min-width: 768px) {
   .advantage__electronics {
-    margin: 0 73px 80px;
+    margin: 0 95px 80px;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
     background:
                 url('../img/play-m.png') left 50% top 18vw no-repeat, url('../img/a-electronics-m.png') 0 0 no-repeat;
     background-size:
                 60px 60px, 100% auto;
     padding-top: 45vw;
-    max-height: 620px;
   }
 
   .electronics__subtitle {
@@ -1271,32 +1275,32 @@ body {
   }
 
   .electronics__description {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
 
   .electronics__tbody {
     display: flex;}
 
   .electronics__value {
-  width: 100%;}
+    width: 100%;}
 
   .electronics__stub--1 {
-  margin: 0 auto;}
+    margin: 0 auto;}
 
   .electronics__stub--2 {
-  top: 0;
-  margin: 0 auto; }
+    top: 0;
+    margin: 0 auto; }
 
   .electronics__valuerow {
-  flex-direction: column;
-  width: 83px;
-  justify-content: flex-start;
+    flex-direction: column;
+    width: 83px;
+    justify-content: flex-start;
   }
 
   .electronics__valuerow  td:first-child {
-  margin-bottom: 95px;
+    margin-bottom: 95px;
   }
 
   .electronics__valuerow  td:last-child {
@@ -1320,8 +1324,13 @@ body {
   }
 
   .electronics__name {
-  width: 83px;
-  margin-top: 60px;
+    width: 83px;
+    margin-top: 60px;
+  }
+
+  .electronics__wrapper {
+
+  width: 69%;
   }
 }
 
@@ -1339,6 +1348,7 @@ body {
   width: 400px;
   max-height: 735px;
   flex-wrap: nowrap;
+  flex-direction: column;
   }
 
   .electronics__novideo {
@@ -1357,11 +1367,10 @@ body {
   }
 
   .electronics__description {
-
-  width: 400px;
-  margin: 0;
-  padding: 0;
-  margin-top: 15px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
   }
 
   .electronics__tbody {
@@ -1373,41 +1382,38 @@ body {
   }
 
   .electronics__stub--1 {
-
-  margin: 0;
-  background: url('../img/power-l.png') center 0 no-repeat;
-  background-size: cover;
-  width: 76px;
-  height: 60px;
+    margin: 0;
+    background: url('../img/power-l.png') center 0 no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 60px;
   }
 
   .electronics__stub--2 {
-
-  top: initial;
-  bottom: 1px;
-  margin: 0;
-  margin-top: 30px;
-  width: 98px;
-  height: 32px;
+    top: initial;
+    bottom: 1px;
+    margin: 0;
+    margin-top: 30px;
+    width: 98px;
+    height: 32px;
   }
 
   .electronics__valuerow {
 
-  width: 400px;
-  margin: 0;
-  flex-direction: row;
-  margin-bottom: 25px;
+    width: 400px;
+    margin: 0;
+    flex-direction: row;
+    margin-bottom: 25px;
   }
 
   .electronics__valuerow  td:first-child {
-
-  margin: 0;
-  width: 50%;
+    margin: 0;
+    width: 50%;
   }
 
   .electronics__valuerow  td:last-child {
 
-  width: 50%;
+    width: 50%;
   }
 
   .electronics__value--1 {
@@ -1416,16 +1422,20 @@ body {
 
   .electronics__value--2 {
 
-  flex-shrink: 0;
+    flex-shrink: 0;
   }
 
   .electronics__namepad {width: 400px;margin: 0;flex-direction: row;}
 
   .electronics__name {
+    margin: 0;
+    width: 50%;
+    padding-right: 50%;
+  }
 
-  margin: 0;
-  width: 50%;
-  padding-right: 50%;
+  .electronics__wrapper {
+
+  width: auto;
   }
 }
 
