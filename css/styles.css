@@ -1556,10 +1556,11 @@ body {
     background-position: left top;
     background-repeat: no-repeat;
 
-    width: 49%;
+    width: 46%;
     margin: 0;
     padding: 0;
     background-size: auto 53px;
+    margin-bottom: 35px;
   }
 
   .specifications__wrapper {
@@ -1567,7 +1568,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 95px;
-    margin-bottom: 145px;
+    margin-bottom: 100px;
   }
 
   .specifications__shell {
@@ -1626,14 +1627,19 @@ body {
 }
 
 .target-group__description {
-  padding-top: 50vw;
+  padding-top: 55vw;
   background-color: #3a30f8;
+}
+
+.target-group__textwrapper {
+
 }
 
 .target-group__text {
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
+  margin: 0;
   margin-bottom: 16px;
 }
 
@@ -1642,24 +1648,162 @@ body {
 }
 
 .btn {
-  margin: 0 auto;
   padding: 5px 15px;
   text-align: center;
 
   background-color: #ffffff;
   border-radius: 15%/85%;
 
-  font-size: 4.4vw;
-  line-height: 2;
+  font-size: 14px;
+  line-height: 4;
   font-weight: 700;
   color: #3a2ff8;
   box-shadow: 0 1vw 5px 0 #2f26c8;
 }
 
 .btn--to-catalog {
-  width: 76vw;
+  width: 272px;
   position: relative;
   margin: 35px calc(12vw - 11px) 80px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .target-group {
+    position: relative;
+    margin: 0;
+    padding-top: 7.9vw;
+  }
+
+  .target-group__sublogo {
+    position: absolute;
+    width: calc(100vw - 44px);
+    height: 63.2vw;
+
+    top: 0;
+
+    background: url('../img/sublogo-tg-m.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .target-group__logotitle {
+    color: #a598f6;
+    font-size: 17.6vw;
+    text-align: right;
+  }
+
+  .target-group__title {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 95px;
+  }
+
+  .target-group__description {
+  background: url('../img/tg-back-m.png') 0 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  }
+
+  .target-group__textwrapper {
+
+  display: flex;
+  margin: 0 73px;
+  justify-content: space-between;
+  text-align: left;
+  }
+
+  .target-group__text {
+    line-height: 1.5;
+    width: 48%;
+    padding: 0;
+  }
+
+  .target-group__bold {
+    font-weight: 700;
+  }
+
+  .btn {
+
+
+  }
+
+  .btn--to-catalog {
+  margin: 0;
+  margin: 35px 0 100px;
+  line-height: initial;
+  }
+
+}
+@media (min-width: 1920px) {
+  .target-group {
+    position: relative;
+    margin: 0;
+    padding-top: 33vw;
+  }
+
+  .target-group__sublogo {
+    position: absolute;
+    width: calc(100vw - 22px);
+    height: 100vw;
+
+    top: 0;
+
+    background: url('../img/sublogo-tg.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .target-group__logotitle {
+    color: #a598f6;
+    font-size: 17.6vw;
+    text-align: right;
+  }
+
+  .target-group__title {
+    color: #ffffff;
+  }
+
+  .target-group__description {
+    padding-top: 50vw;
+    background-color: #3a30f8;
+  }
+
+  .target-group__textwrapper {
+
+  }
+
+  .target-group__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .target-group__bold {
+    font-weight: 700;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding: 5px 15px;
+    text-align: center;
+
+    background-color: #ffffff;
+    border-radius: 15%/85%;
+
+    font-size: 4.4vw;
+    line-height: 2;
+    font-weight: 700;
+    color: #3a2ff8;
+    box-shadow: 0 1vw 5px 0 #2f26c8;
+  }
+
+  .btn--to-catalog {
+    width: 76vw;
+    position: relative;
+    margin: 35px calc(12vw - 11px) 80px;
+  }
+
 }
 
 /* Футер */
@@ -1671,7 +1815,7 @@ body {
 
 .footer__copyright {
   margin: 0;
-  font-size: 3.75vw;
+  font-size: 12px;
   line-height: 2.5;
   font-weight: 300;
   text-align: center;
