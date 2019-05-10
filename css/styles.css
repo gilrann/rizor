@@ -61,6 +61,13 @@ body {
   background-color: #ffffff;
 }
 
+@media (min-width: 1920px) {
+  body {
+  background: url('../img/global-back.png') 0 0 no-repeat;
+  background-size: 2100px auto;
+  }
+}
+
 .frmo {
   font-family: 'Rubik Mono One', 'Lucida Console', sans-serif;
 }
@@ -251,8 +258,8 @@ body {
 }
 @media (min-width: 1920px) {
   .main__screen {
-    background: url('../img/title-back-l.png') 42vw 0 no-repeat;
-    background-size: cover;
+    background: url('../img/title-back-l.png') 42vw 0 no-repeat, url('../img/gearwheel.png') 0 0 no-repeat;
+    background-size: 58vw auto, auto auto;
 
     margin-bottom: 10vw;
 
@@ -768,7 +775,6 @@ body {
 
 @media (min-width: 1920px) {
   .advantage__indicators {
-
     background: url('../img/a-indicators-l.png') 70px bottom no-repeat;
     background-size: 100%;
     margin: 0;
@@ -1492,10 +1498,30 @@ body {
 }
 
 @media (min-width: 1920px) {
+  .specifications {
+  padding-top: 95px;
+  }
+
+  .specifications::before {
+    content: url('../img/scooter-l.png');
+    width: 975px;
+    height: auto;
+    left:-190px;
+    top:0;
+  }
   .specifications__title {
+  margin: 0 375px;
+  width: auto;
+  padding: 0;
+  margin-bottom: 90px;
   }
 
   .specifications__logotitle {
+  font-size: 36px;
+  margin: 0 375px;
+  width: auto;
+  align-self: flex-start;
+  margin-bottom: 75px;
   }
 }
 
@@ -1553,7 +1579,6 @@ body {
   }
 
   .specifications__sublogo {
-    background-position: left top;
     background-repeat: no-repeat;
 
     width: 46%;
@@ -1561,6 +1586,7 @@ body {
     padding: 0;
     background-size: auto 53px;
     margin-bottom: 35px;
+    background-position: left top;
   }
 
   .specifications__wrapper {
@@ -1597,6 +1623,56 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+	.specifications__subtitle {
+
+  padding-top: 30px;
+  font-size: 18px;
+  }
+
+  .specifications__sublogo {
+
+    width: 46%;
+    margin: 0;
+    padding: 0;
+    background-size: auto 65px;
+    margin-bottom: 35px;
+    padding-left: 65px;
+  }
+
+  .specifications__wrapper {
+
+  width: 35vw;
+  align-self: flex-end;
+  margin-right: 320px;
+  }
+
+  .specifications__shell {
+
+  }
+
+  .specifications__text {
+
+  }
+
+  .specifications__bold {
+
+  }
+
+  .specifications__wheels {
+
+  padding-left: 45px;
+  }
+
+  .specifications__power {
+
+  }
+
+  .specifications__weight {
+
+  padding-left: 45px;
+  }
+}
 /* Третья секция */
 
 .target-group {
@@ -1629,6 +1705,8 @@ body {
 .target-group__description {
   padding-top: 55vw;
   background-color: #3a30f8;
+  display: flex;
+  flex-direction: column;
 }
 
 .target-group__textwrapper {
@@ -1655,16 +1733,16 @@ body {
   border-radius: 15%/85%;
 
   font-size: 14px;
-  line-height: 4;
   font-weight: 700;
   color: #3a2ff8;
   box-shadow: 0 1vw 5px 0 #2f26c8;
+  text-transform: uppercase;
 }
 
 .btn--to-catalog {
-  width: 272px;
+  width: 270px;
   position: relative;
-  margin: 35px calc(12vw - 11px) 80px;
+  margin: 35px auto;
   height: 50px;
 }
 
@@ -1676,14 +1754,13 @@ body {
   }
 
   .target-group__sublogo {
-    position: absolute;
-    width: calc(100vw - 44px);
+    width: 100vw;
     height: 63.2vw;
 
-    top: 0;
 
     background: url('../img/sublogo-tg-m.png') 0 0 no-repeat;
     background-size: cover;
+    left: -7px;
   }
 
   .target-group__logotitle {
@@ -1694,20 +1771,20 @@ body {
 
   .target-group__title {
     color: #ffffff;
-    text-align: left;
-    margin-left: 95px;
+    margin-left: 83px;
+    align-self: flex-start;
   }
 
   .target-group__description {
   background: url('../img/tg-back-m.png') 0 0 no-repeat;
   background-size: cover;
-  text-align: center;
+  align-items: center;
   }
 
   .target-group__textwrapper {
 
   display: flex;
-  margin: 0 73px;
+  margin: 0 83px;
   justify-content: space-between;
   text-align: left;
   }
@@ -1736,20 +1813,21 @@ body {
 }
 @media (min-width: 1920px) {
   .target-group {
-    position: relative;
-    margin: 0;
-    padding-top: 33vw;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
   }
 
   .target-group__sublogo {
     position: absolute;
-    width: calc(100vw - 22px);
-    height: 100vw;
+    width: calc(100vw - (145px * 2));
 
     top: 0;
 
-    background: url('../img/sublogo-tg.png') 0 0 no-repeat;
-    background-size: cover;
+    background: url('../img/sublogo-tg-l.png') 0 0 no-repeat;
+    background-size: 100% auto;
+    height: 41.6vw;
+    margin-left: 145px;
   }
 
   .target-group__logotitle {
@@ -1759,24 +1837,33 @@ body {
   }
 
   .target-group__title {
-    color: #ffffff;
+  z-index: 10;
+  margin-left: 320px;
+  margin-bottom: 35px;
   }
 
   .target-group__description {
-    padding-top: 50vw;
     background-color: #3a30f8;
+    padding: 0;
+    padding-bottom: 11vw;
+    display: flex;
+    flex-direction: column;
   }
 
   .target-group__textwrapper {
 
+  z-index: 10;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  margin-left: 320px;
+  align-self: flex-start;
   }
 
   .target-group__text {
     font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
     margin-bottom: 16px;
-    display: inline-block;
+    width: 100%;
   }
 
   .target-group__bold {
@@ -1784,24 +1871,18 @@ body {
   }
 
   .btn {
-    margin: 0 auto;
-    padding: 5px 15px;
-    text-align: center;
 
-    background-color: #ffffff;
-    border-radius: 15%/85%;
 
-    font-size: 4.4vw;
-    line-height: 2;
-    font-weight: 700;
-    color: #3a2ff8;
-    box-shadow: 0 1vw 5px 0 #2f26c8;
+  box-shadow: none;
+  font-size: 16px;
   }
 
   .btn--to-catalog {
-    width: 76vw;
     position: relative;
-    margin: 35px calc(12vw - 11px) 80px;
+    margin: 0;
+    margin-left: 320px;
+    margin-top: 70px;
+    align-self: flex-start;
   }
 
 }
@@ -1820,4 +1901,10 @@ body {
   font-weight: 300;
   text-align: center;
   color: #605f5f;
+}
+
+@media (min-width: 1920px) {
+ .footer__copyright {
+  font-size: 14px;
+ }
 }
