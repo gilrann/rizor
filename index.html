@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__logo">
         <p class="hidden">Rizor</p>
-        <img class="header__mainlogo" src="img/mainlogo-m.png" alt="Rizor">
+        <img class="header__mainlogo" src="img/mainlogo-m.png" alt="Rizor" id="mainscreen">
       </div>
       <div class="header__menu">
         <svg width="30px" height="22px">
@@ -35,20 +35,38 @@
     </header>
 
     <main class="main">
-      <div class="main__screen container">
+      <ul class="pagination" id="pagination">
+        <li class="pagination__item">
+          <a class="pagination__link active" href="#mainscreen">
+            <span class="invisible frr">Rizor Hoverbord 4.0</span>
+          </a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#advantage">
+            <span class="invisible frr">Преимущества</span>
+          </a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#specifications">
+            <span class="invisible frr">Характеристики</span>
+          </a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#target-group">
+            <span class="invisible frr">Для кого</span>
+          </a>
+        </li>
+      </ul>
 
+      <div class="main__screen container">
         <div class="main__text">
           <h1 class="main__title frmo">Rizor Hovertrax 4.0</h1>
           <p class="main__subtitle frr">Маневренность, легкость, экологичность</p>
         </div>
-        <!-- <div class="main__background"></div> -->
-
       </div>
-
 
       <section class="advantage">
         <h2 class="advantage__title section-title frr" id="advantage">Преимущества</h2>
-
         <div class="advantage__design container">
           <h3 class="advantage__subtitle frmo">Дизайн</h3>
           <p class="advantage__text design__text fmp">Внешний вид скутера дышит идеями футуризма:</p>
@@ -190,10 +208,10 @@
         </div>
       </section>
 
-      <section class="target-group">
+      <section class="target-group" id="target-group">
         <div class="target-group__sublogo"></div>
         <div class="target-group__description">
-          <h2 class="target-group__title section-title frr" id="target-group">Для кого</h2>
+          <h2 class="target-group__title section-title frr">Для кого</h2>
           <div class="target-group__textwrapper">
             <p class="target-group__text container frr">
               При максимально выдерживаемой нагрузке в <b class="target-group__bold">100 кг</b> отлично подойдёт как для подрастающего поколения, так и для более взрослых «наездников».</p>
@@ -209,5 +227,10 @@
       <p class="footer__copyright frr">© All rights reserved, 2017</p>
     </footer>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/rizor.js">
+
+  </script>
   </body>
 </html>

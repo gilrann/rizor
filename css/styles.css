@@ -191,7 +191,10 @@ body {
 /* основное содержание */
 .main {
   box-sizing: border-box;
+  position: relative;
 }
+
+.pagination {display: none;}
 
 .main__screen {
   display: flex;
@@ -276,6 +279,83 @@ body {
     background-size: 58vw auto;
     margin-bottom: 10vw;
     height: 39vw;
+  }
+
+  .pagination {
+      display: block;
+      position: fixed;
+      right: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .pagination::before,
+  .pagination::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 328px;
+    background-color: #726afa;
+  }
+
+  .pagination::before {
+    top:-346px;
+    left:107%;
+  }
+
+  .pagination::after {
+    top:109%;
+    left:107%;
+  }
+
+  .pagination__item {
+    margin: 16px auto;
+    text-align: right;
+  }
+
+  .pagination__link {
+    text-decoration: none;
+    color:#726afa;
+    position: relative;
+  }
+  
+  .pagination__link.active span {
+  }
+
+  .pagination__link::before {
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 1px solid #726afa;
+    background-color: #726afa;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 100%;
+    top: 0;
+  }
+
+  .pagination__link.active::before {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 5px solid #726afa;
+    background-color: transparent;
+    border-radius: 50%;
+    content: '';
+    position: relative;
+    margin: 0;
+    left: 98%;
+  }
+
+  .invisible {
+    color:transparent;
+    font-size: 14px;
   }
 
   .main__title {
