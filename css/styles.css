@@ -1262,7 +1262,7 @@ body {
 
 
 
-@media (min-width: 1920px) {
+@media (min-width: 1860px) {
   body {
     background: url('../img/global-back.png') 0 0 no-repeat;
     background-size: 2100px auto;
@@ -1871,16 +1871,17 @@ body {
   .target-group__textwrapper {
     z-index: 10;
     flex-direction: column;
-    width: 280px;
     margin: 0;
     margin-left: 320px;
     align-self: flex-start;
+    padding: 0;
   }
 
   .target-group__text {
     font-size: 16px;
     margin-bottom: 16px;
-    width: 100%;
+    padding: 0;
+    width: 280px;
   }
 
   .target-group__bold {
