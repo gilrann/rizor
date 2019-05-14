@@ -1553,6 +1553,7 @@ body {
     background: url('../img/a-modes-l.png') right top no-repeat;
     padding-bottom: 15vw;
     margin-bottom: 150px;
+    padding-left: 0;
   }
 
   .modes__subtitle {
